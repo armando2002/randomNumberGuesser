@@ -5,13 +5,13 @@ import random
 
 while True:
     start = input("Enter the start of the range: ")
-    if start.isdigit() == True:
+    if start.isdigit() is True:
         break
     else:
         print("Please enter a valid number.")
 while True:
     end = input("Enter the end of the range: ")
-    if end.isdigit() == True:
+    if end.isdigit() is True:
         break
     else:
         print("Please enter a valid number.")
@@ -23,7 +23,7 @@ guess = None
 while guess != random_number:
     inputguess = input("Guess a number: ")
 
-    if inputguess.isdigit() == False:
+    if inputguess.isdigit() is False:
         print("Please enter a valid number.")
         continue
     else:
@@ -35,4 +35,3 @@ if guesses == 1:
     print(f"You guessed the number in {guesses} attempt")
 else:
     print(f"You guessed the number in {guesses} attempts")
-
